@@ -1,0 +1,62 @@
+#main-container {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  /* color: rgb(11, 11, 103); */
+  color: #000000;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+#stayTuned {
+  word-spacing: 9.2px;
+}
+
+.img-container {
+  background-color: rgba(203, 203, 203, 0.476);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.App-link {
+  /* color: rgb(8, 30, 90); */
+  color: #0000009a;
+  line-height: 150%;
+}
+
+#maintenance-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* filter: saturate(200%); */
+  filter: grayscale(100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+#back-button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000c5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 8px rgba(27, 27, 36, 0.1); /* Box shadow */
+}
+
+.contacts-container {
+  margin: 10px;
+  margin-top: 20px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+}

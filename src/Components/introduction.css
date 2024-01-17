@@ -1,0 +1,139 @@
+/* Common styles for both desktop and mobile */
+
+.conatainer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.container-sub {
+  margin-bottom: 20px;
+  /* border: 2px solid rgb(236, 255, 196); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-container,
+.photo-container {
+  margin-bottom: 20px;
+  /* border: 2px solid rgb(226, 255, 196); */
+  text-align: left;
+  font-family: "Playfair Display", serif;
+}
+
+#profilePic {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.logos {
+  height: 35px;
+}
+
+.label-stacks {
+  font-size: medium;
+  font-family: "Nunito", sans-serif;
+}
+.logos-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.social-icon-wrapper {
+  margin: 10px;
+}
+
+.messageContainer {
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#message-textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #d7d7d7;
+}
+
+.muIcon {
+  display: "inline-flex";
+  vertical-align: "text-bottom";
+  margin-left: 5px;
+  /* border: 2px solid white; */
+}
+
+#about-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #7c7c7c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.container-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile view styles */
+@media (max-width: 767px) {
+  .container-main {
+    text-align: left;
+  }
+
+  .photo-container {
+    order: -1; /* Move the photo container to the top */
+  }
+
+  .container-sub {
+    flex-wrap: wrap;
+  }
+  #profilePic {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+
+/* Desktop view styles */
+@media (min-width: 768px) {
+  .container-main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 150px;
+  }
+
+  .intro-container {
+    margin-top: 150px;
+  }
+
+  .intro-container {
+    margin-right: 60px;
+  }
+
+  .container-sub {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
